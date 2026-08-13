@@ -16,13 +16,20 @@
       property="og:description"
       content="Sleep-device Oriented Model-based Nonclinical In-silico Assessment"
     />
-    <meta property="og:image" content="static/images/image/temp.png" />
+    <meta property="og:image" content="static/images/image/SOMNIA_OVERVIEW.gif" />
     <title>
       SOMNIA: Sleep-device Oriented Model-based Nonclinical In-silico Assessment
     </title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&family=JetBrains+Mono:wght@400;500&family=Noto+Sans:wght@400;500;700&display=swap"
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=JetBrains+Mono:wght@400;500&family=Noto+Sans:wght@400;500;700&display=swap"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=JetBrains+Mono:wght@400;500&family=Noto+Sans:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
     <link
@@ -50,7 +57,7 @@
         <li>
           <a href="#highlights" class="toc-link">
             <span class="toc-index">02</span>
-            <span class="toc-text">Highlights</span>
+            <span class="toc-text">Key Features</span>
           </a>
         </li>
         <li>
@@ -99,7 +106,7 @@
                 </span>
                 <span class="link-block">
                   <a
-                    href="https://ydon1111.github.io/SOMNIA_DEMO_TEST/#/"
+                    href="https://dlab-amc.ulsan.ac.kr/DLAB_SOMNIA_DEMO/#/"
                     class="external-link button is-normal is-rounded is-dark"
                     target="_blank"
                     rel="noopener"
@@ -122,50 +129,53 @@
 
         <div class="figure-block overview-media">
           <img
-            src="./static/images/image/temp.png"
+            src="./static/images/image/SOMNIA_OVERVIEW.gif"
             alt="SOMNIA platform overview"
             width="100%"
           />
         </div>
 
-        <div class="content has-text-justified overview-text">
+        <div class="content has-text-centered overview-text">
           <p>
-            <strong>SOMNIA</strong> is an integrated,
-            <strong>MDDT</strong>-inspired evaluation platform designed to
-            deliver reproducible nonclinical in-silico assessments for AI-based
-            sleep analysis tools. By addressing the severe heterogeneity in
-            multi-center polysomnography (<strong>PSG</strong>) datasets and
-            non-standardized evaluation protocols,
-            <strong>SOMNIA</strong> provides objective, regulatory-ready
-            performance evidence to accelerate medical device approval.
+            <span class="text-line"
+              ><strong>SOMNIA</strong> evaluates sleep analysis algorithms using
+              a curated multi-institutional PSG database</span
+            >
+            <span class="text-line"
+              >and automatically generates
+              <strong>nonclinical performance reports</strong> to support
+              regulatory submissions.</span
+            >
           </p>
         </div>
       </div>
     </section>
 
-    <!-- ========== HIGHLIGHTS ========== -->
+    <!-- ========== KEY FEATURES ========== -->
     <section class="section page-section" id="highlights">
       <div class="container is-max-desktop">
-        <h2 class="title is-3 section-title has-text-centered">Highlights</h2>
+        <h2 class="title is-3 section-title has-text-centered">Key Features</h2>
 
         <article class="highlight-block">
           <div class="figure-block">
             <img
               src="./static/images/image/dataset.png"
-              alt="Harmonized Large-Scale PSG Dataset"
+              alt="Harmonized PSG database of nearly 30,000 studies"
               width="100%"
             />
           </div>
-          <h3 class="highlight-caption">
+          <div class="highlight-caption">
             <span class="highlight-num" aria-hidden="true">01</span>
-            <span class="highlight-title">Harmonized Large-Scale PSG Dataset</span>
-          </h3>
-          <div class="content has-text-justified body-text">
+          </div>
+          <div class="content has-text-centered body-text">
             <p>
-              Harmonized physiological signals and sleep parameters across
-              diverse cohorts, constructing a benchmark dataset of approximately
-              <strong>30,000 PSG</strong> recordings from both public and
-              private clinical sources.
+              <span class="text-line"
+                >A database of nearly <strong>30,000 PSG studies</strong> built
+                by harmonizing biosignals and sleep analysis parameters,</span
+              >
+              <span class="text-line"
+                >spanning public datasets and real-world clinical data.</span
+              >
             </p>
           </div>
         </article>
@@ -174,20 +184,22 @@
           <div class="figure-block">
             <img
               src="./static/images/image/architecture.png"
-              alt="Effortless Algorithm Submission"
+              alt="Algorithm submission via defined inputs and outputs"
               width="100%"
             />
           </div>
-          <h3 class="highlight-caption">
+          <div class="highlight-caption">
             <span class="highlight-num" aria-hidden="true">02</span>
-            <span class="highlight-title">Effortless Algorithm Submission</span>
-          </h3>
-          <div class="content has-text-justified body-text">
+          </div>
+          <div class="content has-text-centered body-text">
             <p>
-              Streamlined integration process where users simply match their
-              code's input and output variables to the platform's
-              <strong>standardized schema</strong> to submit their algorithms
-              effortlessly.
+              <span class="text-line"
+                >Simply define the required
+                <strong>inputs and outputs</strong> in your code</span
+              >
+              <span class="text-line"
+                >to submit your algorithm through the platform.</span
+              >
             </p>
           </div>
         </article>
@@ -196,20 +208,22 @@
           <div class="figure-block figure-narrow">
             <img
               src="./static/images/image/report.png"
-              alt="Automated Performance Reporting and Subgroup Analysis"
+              alt="Performance review compiled into a PDF report"
             />
           </div>
-          <h3 class="highlight-caption">
+          <div class="highlight-caption">
             <span class="highlight-num" aria-hidden="true">03</span>
-            <span class="highlight-title">Automated Performance Reporting &amp; Subgroup Analysis</span>
-          </h3>
-          <div class="content has-text-justified body-text">
+          </div>
+          <div class="content has-text-centered body-text">
             <p>
-              Upon submission, instantly evaluate algorithm performance across
-              the entire dataset or targeted
-              <strong>clinical subgroups</strong>, and receive comprehensive
-              performance evaluation results as
-              <strong>downloadable PDF reports</strong>.
+              <span class="text-line"
+                >Then, review algorithm performance for the overall population
+                and selected subgroups,</span
+              >
+              <span class="text-line"
+                >with the results automatically compiled into a
+                <strong>PDF report</strong>.</span
+              >
             </p>
           </div>
         </article>
