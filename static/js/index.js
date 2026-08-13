@@ -67,4 +67,18 @@
     window.addEventListener("resize", setActive);
     setActive();
   }
+
+  var topBtn = document.getElementById("back-to-top");
+  if (topBtn) {
+    function updateTopBtn() {
+      topBtn.classList.toggle("is-visible", window.scrollY > 400);
+    }
+
+    topBtn.addEventListener("click", function () {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+
+    window.addEventListener("scroll", updateTopBtn, { passive: true });
+    updateTopBtn();
+  }
 })();
