@@ -11,12 +11,14 @@
       var text = bibtex.innerText || bibtex.textContent || "";
       if (navigator.clipboard && navigator.clipboard.writeText) {
         navigator.clipboard.writeText(text).then(function () {
-          var label = copyBtn.querySelector("span:last-child");
+          var label = copyBtn.querySelector(".copy-label");
           if (label) {
             var prev = label.textContent;
             label.textContent = "Copied";
+            copyBtn.classList.add("is-copied");
             setTimeout(function () {
               label.textContent = prev;
+              copyBtn.classList.remove("is-copied");
             }, 1500);
           }
         });
