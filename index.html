@@ -206,11 +206,29 @@
 
         <article class="highlight-block">
           <div class="figure-block figure-mid">
-            <img
-              src="./static/images/image/parameter.png"
-              alt="Algorithm submission via defined inputs and outputs"
-              width="100%"
-            />
+            <picture>
+              <source
+                type="image/webp"
+                srcset="
+                  ./static/images/image/parameter-900.webp 900w,
+                  ./static/images/image/parameter-1800.webp 1800w
+                "
+                sizes="(max-width: 900px) 100vw, 900px"
+              />
+              <img
+                src="./static/images/image/parameter-900.png"
+                srcset="
+                  ./static/images/image/parameter-900.png 900w,
+                  ./static/images/image/parameter-1800.png 1800w
+                "
+                sizes="(max-width: 900px) 100vw, 900px"
+                alt="Algorithm submission via defined inputs and outputs"
+                width="900"
+                height="531"
+                loading="lazy"
+                decoding="async"
+              />
+            </picture>
           </div>
           <div class="highlight-caption">
             <span class="highlight-num" aria-hidden="true">02</span>
@@ -230,14 +248,29 @@
 
         <article class="highlight-block">
           <div class="figure-block figure-narrow">
-            <img
-              src="./static/images/image/report.png"
-              srcset="
-                ./static/images/image/report.png 1x,
-                ./static/images/image/report@2x.png 2x
-              "
-              alt="Performance review compiled into a PDF report"
-            />
+            <picture>
+              <source
+                type="image/webp"
+                srcset="
+                  ./static/images/image/report-420.webp 420w,
+                  ./static/images/image/report-840.webp 840w
+                "
+                sizes="(max-width: 420px) 100vw, 420px"
+              />
+              <img
+                src="./static/images/image/report-420.png"
+                srcset="
+                  ./static/images/image/report-420.png 420w,
+                  ./static/images/image/report-840.png 840w
+                "
+                sizes="(max-width: 420px) 100vw, 420px"
+                alt="Performance review compiled into a PDF report"
+                width="420"
+                height="542"
+                loading="lazy"
+                decoding="async"
+              />
+            </picture>
           </div>
           <div class="highlight-caption">
             <span class="highlight-num" aria-hidden="true">03</span>
