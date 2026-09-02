@@ -16,7 +16,10 @@
       property="og:description"
       content="Sleep-device Oriented Model-based Nonclinical In-silico Assessment"
     />
-    <meta property="og:image" content="static/images/image/SOMNIA_OVERVIEW.gif" />
+    <meta
+      property="og:image"
+      content="static/images/image/SOMNIA_OVERVIEW_poster.jpg"
+    />
     <title>
       SOMNIA: Sleep-device Oriented Model-based Nonclinical In-silico Assessment
     </title>
@@ -57,7 +60,7 @@
         <li>
           <a href="#highlights" class="toc-link">
             <span class="toc-index">02</span>
-            <span class="toc-text">Key Features</span>
+            <span class="toc-text">Why SOMNIA</span>
           </a>
         </li>
         <li>
@@ -94,16 +97,15 @@
 
               <div class="publication-links">
                 <span class="link-block">
-                  <a
-                    href="https://github.com/DLabAMC/SOMNIA"
-                    class="external-link button is-normal is-rounded is-dark has-tip"
-                    data-tip="GitHub Repository"
-                    target="_blank"
-                    rel="noopener"
+                  <span
+                    class="button is-normal is-rounded is-disabled has-tip"
+                    data-tip="TBD"
+                    aria-disabled="true"
+                    role="button"
                   >
                     <span class="icon"><i class="fab fa-github"></i></span>
                     <span>Code</span>
-                  </a>
+                  </span>
                 </span>
                 <span class="link-block">
                   <a
@@ -130,11 +132,31 @@
         <h2 class="title is-3 section-title has-text-centered">Overview</h2>
 
         <div class="figure-block overview-media">
-          <img
-            src="./static/images/image/SOMNIA_OVERVIEW.gif"
-            alt="SOMNIA platform overview"
-            width="100%"
-          />
+          <video
+            class="overview-media-video"
+            autoplay
+            muted
+            loop
+            playsinline
+            poster="./static/images/image/SOMNIA_OVERVIEW_poster.jpg"
+            aria-label="SOMNIA platform overview"
+          >
+            <source
+              src="./static/images/image/SOMNIA_OVERVIEW.mp4"
+              type="video/mp4"
+            />
+            <picture>
+              <source
+                srcset="./static/images/image/SOMNIA_OVERVIEW.webp"
+                type="image/webp"
+              />
+              <img
+                src="./static/images/image/SOMNIA_OVERVIEW.gif"
+                alt="SOMNIA platform overview"
+                width="100%"
+              />
+            </picture>
+          </video>
         </div>
 
         <div class="content has-text-centered overview-text">
@@ -156,7 +178,7 @@
     <!-- ========== KEY FEATURES ========== -->
     <section class="section page-section" id="highlights">
       <div class="container is-max-desktop">
-        <h2 class="title is-3 section-title has-text-centered">Key Features</h2>
+        <h2 class="title is-3 section-title has-text-centered">Why SOMNIA</h2>
 
         <article class="highlight-block">
           <div class="figure-block figure-dataset">
@@ -185,7 +207,7 @@
         <article class="highlight-block">
           <div class="figure-block figure-mid">
             <img
-              src="./static/images/image/architecture.png"
+              src="./static/images/image/parameter.png"
               alt="Algorithm submission via defined inputs and outputs"
               width="100%"
             />
@@ -210,6 +232,10 @@
           <div class="figure-block figure-narrow">
             <img
               src="./static/images/image/report.png"
+              srcset="
+                ./static/images/image/report.png 1x,
+                ./static/images/image/report@2x.png 2x
+              "
               alt="Performance review compiled into a PDF report"
             />
           </div>
@@ -282,7 +308,12 @@
       </div>
     </footer>
 
-    <button type="button" class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <button
+      type="button"
+      class="back-to-top"
+      id="back-to-top"
+      aria-label="Back to top"
+    >
       <span class="icon"><i class="fas fa-arrow-up"></i></span>
       <span>TOP</span>
     </button>
