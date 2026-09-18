@@ -134,36 +134,18 @@
         <h2 class="title is-3 section-title has-text-centered">Overview</h2>
 
         <div class="figure-block overview-media">
-          <video
-            class="overview-media-video"
-            autoplay
-            muted
-            loop
-            playsinline
-            disablepictureinpicture
-            disableremoteplayback
-            width="1600"
-            height="1166"
-            poster="./static/images/image/SOMNIA_OVERVIEW_poster.jpg"
-            aria-label="SOMNIA platform overview"
-          >
+          <picture>
             <source
-              src="./static/images/image/SOMNIA_OVERVIEW.mp4"
-              type="video/mp4"
+              srcset="./static/images/image/SOMNIA_OVERVIEW.webp"
+              type="image/webp"
             />
-            <picture>
-              <source
-                srcset="./static/images/image/SOMNIA_OVERVIEW.webp"
-                type="image/webp"
-              />
-              <img
-                src="./static/images/image/SOMNIA_OVERVIEW_RE.gif"
-                alt="SOMNIA platform overview"
-                width="1920"
-                height="1399"
-              />
-            </picture>
-          </video>
+            <img
+              src="./static/images/image/SOMNIA_OVERVIEW_RE.gif"
+              alt="SOMNIA platform overview"
+              width="1920"
+              height="1399"
+            />
+          </picture>
         </div>
 
         <div class="content has-text-centered overview-text">
